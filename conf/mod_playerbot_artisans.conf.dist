@@ -1,0 +1,58 @@
+[worldserver]
+
+#
+#   mod-playerbot-artisans
+#   Crafter bots advertise recipes they actually know in chat.
+#   Since advertisements are strictly drawn from learned recipes, they are
+#   inherently level-appropriate and skill-appropriate.
+#   Bot leveling and recipe acquisition are handled by the Playerbots factory;
+#   this module makes bots feel like active, crafting participants in the world.
+#
+
+#   Enable or disable the module. Default: 1
+PlayerbotArtisans.Enable = 1
+
+#   Interval between ad batches (in seconds). Default: 45
+PlayerbotArtisans.TickSeconds = 45
+
+#   Number of ads posted per batch. Keep low to avoid Trade spam. Default: 2
+PlayerbotArtisans.AdsPerTick = 2
+
+#   Minimum profession skill required for a bot to advertise. Default: 100
+PlayerbotArtisans.MinSkill = 100
+
+#   Number of recipes to name per advertisement. Default: 2
+PlayerbotArtisans.AdvertiseCount = 2
+
+#   Cooldown before the same bot can advertise again (in seconds). Default: 900
+PlayerbotArtisans.PerBotCooldownSeconds = 900
+
+#   Post advertisements in the Trade channel. Default: 1
+PlayerbotArtisans.UseTradeChannel = 1
+
+#   Post advertisements in the local zone General channel. Default: 0
+PlayerbotArtisans.UseGeneralChannel = 0
+
+#
+#   ---- v0.2 ----
+#
+
+#   Use clickable item and enchant links instead of plain text.
+#   Players can Shift-click or hover to inspect item tooltips. Default: 1
+PlayerbotArtisans.UseItemLinks = 1
+
+#   Enable bots replying to player whispers inquiring about recipes.
+#   Explains terms and known crafts without taking formal orders.
+#   Default: 1
+PlayerbotArtisans.AnswerWhispers = 1
+
+#   Number of recipes listed in whisper replies. Default: 5
+PlayerbotArtisans.WhisperRecipeCount = 5
+
+#   Duration (in seconds) a bot remembers having advertised to reply to whispers.
+#   Default: 3600
+PlayerbotArtisans.WhisperMemorySeconds = 3600
+
+#   Vary advertisement wording to prevent repetitive text in Trade chat.
+#   Default: 1
+PlayerbotArtisans.VaryAdWording = 1
